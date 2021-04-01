@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#SBATCH --mail-type=END
+#SBATCH --mail-user=avery.fulford@duke.edu
+#SBATCH -c 2
+#SBATCH --mem=20g
+
+/hpc/group/schmidlab/ahf11/Mauve/progressiveMauve --output=out291anno.xmfa Mauve/carlsbad.gbk spades_output6/scaffolds.fasta Mauve/Vmaris_aceF.gb Mauve/Vmaris_gltS.gb Mauve/Vmaris_gyrB.gb Mauve/Vmaris_M323.gb Mauve/mtrA.gb Mauve/Vmaris_recA.gb Mauve/Vmaris_spIB.gb
