@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#SBATCH -c 2
+#SBATCH --mem=20g
+
+/hpc/group/schmidlab/ahf11/Mauve/progressiveMauve –-output=outhalosimplexanno.xmfa carlsbad.gbk pelagicum.gbk rubrum.gbk
