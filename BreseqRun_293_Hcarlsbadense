@@ -1,0 +1,9 @@
+#!/bin/bash
+#SBATCH -e slurm.err
+#SBATCH --mem=128G
+#SBATCH -p scavenger
+#SBATCH -p schmidlab
+module load breseq
+module load Bowtie2/2.3.5.1
+module load R/3.6.0
+breseq -o /work/ahf11/breseq_output_virgi --require-match-fraction 0 -r /work/ahf11/H_carlsbadense.fasta /hpc/group/schmidlab/ahf11/spades_output6/corrected/Sample_2_9_3_1.00.0_0.cor.fastq /hpc/group/schmidlab/ahf11/spades_output6/corrected/Sample_2_9_3_2.00.0_0.cor.fastq
