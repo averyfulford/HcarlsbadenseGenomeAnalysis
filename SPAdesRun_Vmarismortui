@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH -e slurm.err
+#SBATCH --mem=128G
+#SBATCH -p scavenger
+#SBATCH -p schmidlab
+module load SPAdes/3.13.1
+spades.py -1 /work/ahf11/Sample_v_maris_1.fastq -2 /work/ahf11/Sample_v_maris_2.fastq -o /work/ahf11/spades_output_vmaris
