@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH -e slurm.err
+#SBATCH --mem=128G
+#SBATCH -p scavenger
+#SBATCH -p schmidlab
+module load SPAdes/3.13.1
+spades.py --pe1-1 ~/proj_ahf/Sample_2_9_3_1.fastq --pe1-2 ~/proj_ahf/Sample_2_9_3_2.fastq --nanopore ~/proj_ahf/293.correctedReads.fasta -o spades_output
