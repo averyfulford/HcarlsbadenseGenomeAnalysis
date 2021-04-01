@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#SBATCH --mail-type=END
+#SBATCH --mail-user=avery.fulford@duke.edu
+#SBATCH -c 2
+#SBATCH --mem=20g
+
+/hpc/group/schmidlab/ahf11/Mauve/progressiveMauve -- output=outhalophilesanno.xmfa carlsbad.gbk Haloarcula_japonica.gbk Haloarcula_marismortui.gbk Haloarcula_quadrata.gbk Haloarcula_sinaiiensis.gbk Haloarcula_vallismortis.gbk Halobacterium_salinarum.gbk Halococcus_morrhuae.gbk Halococcus_salifodinae.gbk Halomicrobium_mukohataei.gbk Halorhabdus_utahensis.gbk mediterranei.gbk Natronococcus_occultus.gbk volcanii.gbk
